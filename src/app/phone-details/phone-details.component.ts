@@ -37,6 +37,14 @@ export class PhoneDetailsComponent implements OnInit {
     if(!window.confirm('Are you sure?')) {
       return;
     }
+
+    this.myPhoneService.remove(this.phone['_id'])
+    .then(() => {
+      this.myNavigator.navigate(['/']);
+    })
+    .catch((err) => {
+      this.errorMessage = 'Could not retrieve phone details. Try again later.';
+    });
   }
 
 }
