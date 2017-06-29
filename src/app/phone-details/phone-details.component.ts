@@ -9,6 +9,8 @@ import { PhoneService } from '../phone.service';
   styleUrls: ['./phone-details.component.css']
 })
 export class PhoneDetailsComponent implements OnInit {
+
+  
   phone: Object;
   errorMessage: string = '';
 
