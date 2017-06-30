@@ -22,7 +22,7 @@ import { PhoneService } from './phone.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PhoneService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
